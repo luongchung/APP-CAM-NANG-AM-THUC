@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="80dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txtTenLoai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.13"
+        android:background="@drawable/dinhdang"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/Campfire_Nau"
+        android:textSize="25dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="7dp" />
+</LinearLayout>

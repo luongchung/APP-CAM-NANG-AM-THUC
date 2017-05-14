@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="company.luongchung.camnangamthuc.MainActivity">
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/colorPrimary">
+       <include
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           layout="@layout/toolbar_layout"/>
+       <android.support.design.widget.TabLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:tabTextColor="#DCE775"
+           app:tabSelectedTextColor="#FFFFFF"
+           app:tabIndicatorColor="#ffffff"
+           android:id="@+id/tablayout"
+           app:tabMode="fixed"
+           app:tabGravity="fill">
+       </android.support.design.widget.TabLayout>
+   </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            app:itemTextColor="#ffff"
+            app:itemIconTint="#ffff"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/navigation_botton"/>
+</RelativeLayout>
+

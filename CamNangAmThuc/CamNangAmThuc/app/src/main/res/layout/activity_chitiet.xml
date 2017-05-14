@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_chitiet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="company.luongchung.camnangamthuc.chitiet"
+        android:weightSum="1">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/txtTenND"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingTop="50dp"
+    android:layout_height="match_parent">
+        <Button
+            android:text="Chia sẻ"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:id="@+id/btnShareItem"
+            android:layout_marginTop="3dp"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            style="@style/com_facebook_button_share"
+            android:layout_weight="0.09"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:layout_height="25dp"
+            android:id="@+id/btnLikeItem"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="83dp"
+            style="@style/com_facebook_button_like"
+            android:background="@drawable/com_facebook_button_background"
+            android:layout_width="80dp"
+            android:text="Yêu thích"
+            android:textSize="12dp"
+            android:textStyle="normal|bold" />
+
+    <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>
