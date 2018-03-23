@@ -2,29 +2,23 @@ package company.luongchung.camnangamthuc;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
-import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
 import java.util.ArrayList;
-
 import company.luongchung.adapter.adapterMonAn;
 import company.luongchung.model.MonAn;
 import dmax.dialog.SpotsDialog;
 
-public class Search_View extends ActionBarActivity {
+public class Search_View extends AppCompatActivity {
     adapterMonAn adapter;
     ArrayList<MonAn> monAnArrayList;
     ListView lvSearch;
